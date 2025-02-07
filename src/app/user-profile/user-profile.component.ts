@@ -11,10 +11,18 @@ import {FormsModule} from '@angular/forms';
 })
 export class UserProfileComponent {
   user = {
-    name: 'John Doe',
+    firstName: 'John',
+    lastName: 'Doe',
     email: 'john.doe@example.com',
     phone: '+123456789',
-    address: '123 Street, City, Country'
+    mobileNumber: '',
+    addressLine1: '',
+    addressLine2: '',
+    city: '',
+    state: '',
+    zip: '',
+    country: '',
+    area: '',
   };
 
   // Mode check - true for edit, false for view
