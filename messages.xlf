@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4438272381567464646" datatype="html">
+        <source>User Image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <note priority="1" from="description">Alt text for user profile image</note>
+        <note priority="1" from="meaning">User Image Description</note>
+      </trans-unit>
+      <trans-unit id="1973561012745363503" datatype="html">
+        <source>Profile Settings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+        <note priority="1" from="description">Profile Settings Header</note>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <note priority="1" from="description">Name Label</note>
+      </trans-unit>
+      <trans-unit id="6028371114637047813" datatype="html">
+        <source>First Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <note priority="1" from="description">First Name Placeholder</note>
+      </trans-unit>
+      <trans-unit id="2045112409653231798" datatype="html">
+        <source>Surname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <note priority="1" from="description">Surname Label</note>
+      </trans-unit>
+      <trans-unit id="4407559560004943843" datatype="html">
+        <source>Last Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <note priority="1" from="description">Last Name Placeholder</note>
+      </trans-unit>
+      <trans-unit id="7571110135159465275" datatype="html">
+        <source>Mobile Number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <note priority="1" from="description">Mobile Label</note>
+      </trans-unit>
+      <trans-unit id="3629907175471173927" datatype="html">
+        <source>Enter phone number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <note priority="1" from="description">Mobile Number Placeholder</note>
+      </trans-unit>
+      <trans-unit id="4523907648468761702" datatype="html">
+        <source>Address Line 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <note priority="1" from="description">Address Line 1 Label</note>
+      </trans-unit>
+      <trans-unit id="3213922551788449660" datatype="html">
+        <source>Enter address line 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <note priority="1" from="description">Address Line 1 Placeholder</note>
+      </trans-unit>
+      <trans-unit id="8231916530164206787" datatype="html">
+        <source>Address Line 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <note priority="1" from="description">Address Line 2 Label</note>
+      </trans-unit>
+      <trans-unit id="7182639893560232955" datatype="html">
+        <source>Enter address line 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <note priority="1" from="description">Address Line 2 Placeholder</note>
+      </trans-unit>
+      <trans-unit id="1940878621012578963" datatype="html">
+        <source>Postcode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+        <note priority="1" from="description">Postcode Label</note>
+      </trans-unit>
+      <trans-unit id="8701126928383267340" datatype="html">
+        <source>Enter postcode</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <note priority="1" from="description">Postcode Placeholder</note>
+      </trans-unit>
+      <trans-unit id="5911214550882917183" datatype="html">
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <note priority="1" from="description">State Label</note>
+      </trans-unit>
+      <trans-unit id="3079598396242247686" datatype="html">
+        <source>Enter state</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <note priority="1" from="description">State Placeholder</note>
+      </trans-unit>
+      <trans-unit id="2612153957528769606" datatype="html">
+        <source>Area</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+        <note priority="1" from="description">Area Label</note>
+      </trans-unit>
+      <trans-unit id="7491723337393513410" datatype="html">
+        <source>Enter area</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+        <note priority="1" from="description">Area Placeholder</note>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+        <note priority="1" from="description">Email Label</note>
+      </trans-unit>
+      <trans-unit id="5495149747457702941" datatype="html">
+        <source>Enter email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+        <note priority="1" from="description">Email Placeholder</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
