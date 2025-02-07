@@ -6,7 +6,6 @@ import {UserProfileComponent} from './user-profile/user-profile.component';
   selector: 'app-root',
   imports: [RouterOutlet, UserProfileComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass',
 })
 export class AppComponent {
   title = 'angular-learn-project';

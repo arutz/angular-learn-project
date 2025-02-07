@@ -7,7 +7,6 @@ import {FormsModule} from '@angular/forms';
   imports: [
     FormsModule,
   ],
-  styleUrls: ['./user-profile.component.css'] // Optional for additional styles
 })
 export class UserProfileComponent {
   user = {
