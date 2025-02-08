@@ -1,105 +1,103 @@
-<div class="container mx-auto my-5 p-5 bg-white shadow-md rounded-lg">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Profile Sidebar -->
-    <div class="p-5 flex flex-col items-center md:border-r border-gray-300">
-      <img
-        class="rounded-full w-36 h-36 object-cover border mb-4"
-        src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
-        alt="User Image"
-        i18n-alt="User Image Description|Alt text for user profile image"
-      />
-      <h2 class="font-bold text-lg">User profile</h2>
-      <p class="text-sm text-gray-500"><a href="mailto:{{ user.email }}">{{user.firstName}} {{user.lastName}}</a></p>
-    </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <!-- Profile Sidebar -->
+  <div class="p-5 flex flex-col items-center md:border-r border-gray-300">
+    <img
+      class="rounded-full w-36 h-36 object-cover border mb-4"
+      src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+      alt="User Image"
+      i18n-alt="User Image Description|Alt text for user profile image"
+    />
+    <h2 class="font-bold text-lg">User profile</h2>
+    <p class="text-sm text-gray-500"><a href="mailto:{{ user.email }}">{{ user.firstName }} {{ user.lastName }}</a></p>
+  </div>
 
-    <!-- Profile Details Section -->
-    <div class="md:col-span-2 p-5">
-      <div class="flex items-center justify-between border-b pb-4 mb-6">
-        <h3 class="text-lg font-semibold" i18n="Profile Settings Header">Profile Settings</h3>
+  <!-- Profile Details Section -->
+  <div class="md:col-span-2 p-5">
+    <div class="flex items-center justify-between border-b pb-4 mb-6">
+      <h3 class="text-lg font-semibold" i18n="Profile Settings Header">Profile Settings</h3>
+    </div>
+    <!-- Input Groups -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-600" i18n="Name Label">Name</label>
+        <input [value]="user.firstName"
+               type="text"
+               placeholder="First Name"
+               i18n-placeholder="First Name Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
       </div>
-      <!-- Input Groups -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-600" i18n="Name Label">Name</label>
-          <input [value]="user.firstName"
-                 type="text"
-                 placeholder="First Name"
-                 i18n-placeholder="First Name Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-600" i18n="Surname Label">Surname</label>
-          <input [value]="user.lastName"
-                 type="text"
-                 placeholder="Last Name"
-                 i18n-placeholder="Last Name Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div class="col-span-1 md:col-span-2">
-          <label class="block text-sm font-medium text-gray-600" i18n="Mobile Label">Mobile Number</label>
-          <input [value]="user.mobileNumber"
-                 type="text"
-                 placeholder="Enter phone number"
-                 i18n-placeholder="Mobile Number Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div class="col-span-1 md:col-span-2">
-          <label class="block text-sm font-medium text-gray-600" i18n="Address Line 1 Label">Address Line 1</label>
-          <input [value]="user.addressLine1"
-                 type="text"
-                 placeholder="Enter address line 1"
-                 i18n-placeholder="Address Line 1 Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div class="col-span-1 md:col-span-2">
-          <label class="block text-sm font-medium text-gray-600" i18n="Address Line 2 Label">Address Line 2</label>
-          <input [value]="user.addressLine2"
-                 type="text"
-                 placeholder="Enter address line 2"
-                 i18n-placeholder="Address Line 2 Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div class="col-span-1 md:col-span-2">
-          <label class="block text-sm font-medium text-gray-600" i18n="Postcode Label">Postcode</label>
-          <input [value]="user.zip"
-                 type="text"
-                 placeholder="Enter postcode"
-                 i18n-placeholder="Postcode Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-600" i18n="State Label">State</label>
-          <input [value]="user.state"
-                 type="text"
-                 placeholder="Enter state"
-                 i18n-placeholder="State Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-600" i18n="Area Label">Area</label>
-          <input [value]="user.area"
-                 type="text"
-                 placeholder="Enter area"
-                 i18n-placeholder="Area Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-600" i18n="Email Label">Email</label>
-          <input [value]="user.email"
-                 type="text"
-                 placeholder="Enter email"
-                 i18n-placeholder="Email Placeholder"
-                 class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
-          />
-        </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600" i18n="Surname Label">Surname</label>
+        <input [value]="user.lastName"
+               type="text"
+               placeholder="Last Name"
+               i18n-placeholder="Last Name Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <label class="block text-sm font-medium text-gray-600" i18n="Mobile Label">Mobile Number</label>
+        <input [value]="user.mobileNumber"
+               type="text"
+               placeholder="Enter phone number"
+               i18n-placeholder="Mobile Number Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <label class="block text-sm font-medium text-gray-600" i18n="Address Line 1 Label">Address Line 1</label>
+        <input [value]="user.addressLine1"
+               type="text"
+               placeholder="Enter address line 1"
+               i18n-placeholder="Address Line 1 Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <label class="block text-sm font-medium text-gray-600" i18n="Address Line 2 Label">Address Line 2</label>
+        <input [value]="user.addressLine2"
+               type="text"
+               placeholder="Enter address line 2"
+               i18n-placeholder="Address Line 2 Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div class="col-span-1 md:col-span-2">
+        <label class="block text-sm font-medium text-gray-600" i18n="Postcode Label">Postcode</label>
+        <input [value]="user.zip"
+               type="text"
+               placeholder="Enter postcode"
+               i18n-placeholder="Postcode Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600" i18n="State Label">State</label>
+        <input [value]="user.state"
+               type="text"
+               placeholder="Enter state"
+               i18n-placeholder="State Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600" i18n="Area Label">Area</label>
+        <input [value]="user.area"
+               type="text"
+               placeholder="Enter area"
+               i18n-placeholder="Area Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-600" i18n="Email Label">Email</label>
+        <input [value]="user.email"
+               type="text"
+               placeholder="Enter email"
+               i18n-placeholder="Email Placeholder"
+               class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-300 focus:outline-none"
+        />
       </div>
     </div>
   </div>
