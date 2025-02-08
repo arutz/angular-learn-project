@@ -8,8 +8,8 @@
         alt="User Image"
         i18n-alt="User Image Description|Alt text for user profile image"
       />
-      <h2 class="font-bold text-lg">{{user.firstName}} {{ user.lastName}}</h2>
-      <p class="text-sm text-gray-500">{{ user.email }}</p>
+      <h2 class="font-bold text-lg">User profile</h2>
+      <p class="text-sm text-gray-500"><a href="mailto:{{ user.email }}">{{user.firstName}} {{user.lastName}}</a></p>
     </div>
 
     <!-- Profile Details Section -->

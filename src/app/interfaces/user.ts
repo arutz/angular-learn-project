@@ -1,0 +1,15 @@
+export interface User {
+  id?: string,
+  firstName: string,
+  lastName: string,
+  email: string,
+  phone: string,
+  mobileNumber: string,
+  addressLine1: string,
+  addressLine2: string,
+  city: string,
+  state: string,
+  zip: string,
+  country: string,
+  area: string,
+}

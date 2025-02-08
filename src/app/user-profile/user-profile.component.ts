@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {User} from '../interfaces/user';
 
 @Component({
   selector: 'app-user-profile',
@@ -9,7 +10,7 @@ import {FormsModule} from '@angular/forms';
   ],
 })
 export class UserProfileComponent {
-  user = {
+  user: User = {
     firstName: 'John',
     lastName: 'Doe',
     email: 'john.doe@example.com',
