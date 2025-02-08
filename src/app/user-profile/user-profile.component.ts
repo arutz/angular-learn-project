@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {User} from '../interfaces/user';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-user-profile',
@@ -10,6 +11,13 @@ import {User} from '../interfaces/user';
   ],
 })
 export class UserProfileComponent {
+
+  private readonly route = inject(ActivatedRoute);
+
+  constructor() {
+    this.user.id = this.route.snapshot.paramMap.get('id') ?? undefined
+  }
+
   user: User = {
     firstName: 'John',
     lastName: 'Doe',

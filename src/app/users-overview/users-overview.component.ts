@@ -1,16 +1,20 @@
-import {Component} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {User} from '../interfaces/user';
-import {NgForOf, NgIf} from '@angular/common';
+import {NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-users-overview',
   imports: [
     NgIf,
-    NgForOf
+    NgForOf,
+    NgOptimizedImage
   ],
   templateUrl: './users-overview.component.html',
 })
 export class UsersOverviewComponent {
+  private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
   imagePath = 'assets/images/user-overview-icon.png';
   users: User[] = [];
 
@@ -31,7 +35,8 @@ export class UsersOverviewComponent {
     }]
   }
 
-  editUser(id?:string) {
+  async editUser(id?: string) {
+    await this.router.navigate([(id ?? 'new')], {relativeTo: this.route});
   }
 
   deleteUser(id?:string) {
